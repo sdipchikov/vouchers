@@ -9,11 +9,29 @@
     "name": "typicode"
   },
   "check_by_code": {
-  	"success": false,
-	"error": {
-		"code": 1000,
-		"message": "Не съществува ваучер с този номер. Моля, опитайте отново."
-	},
-	"result": false
+    "success": true,
+  "error": false,
+  "result": {
+    "warnings": ["Този ваучер е маркиран, че вече е бил използван (на 10.04.2020г, 15:21ч)!", "Валидността на закупената от клиента оферта е била обявена до 11.04.2020г"],
+    "voucher": {
+      "code": 12345678,
+      "secret": 87654321,
+      "status": "NOT_USED",
+      "used_date": "",
+      "title": "Две пици Капричоза (доматен сос, шунка, гъби, пипер, моцарела), 500гр",
+      "user_name": "Иван Иванов",
+      "date_valid": "2020-04-22",
+      "price_regular": 20,
+      "price_promo": 9.9,
+      "amount_prepaid": 9.9,
+      "amount_to_surcharge": 0,
+      "currency": "BGN",
+      "deal_extras": ["Всеки клиент с ваучер получава бонус голяма бира."],
+      "deal_rules": ["С предварителна резервация на тел. 0892 410 012."],
+      "deal_id": "0ntv5m",
+      "deal_url": "https://grabo.bg/...url-of-the-deal...",
+      "company_name": "Пицария \"При нас е вкусно\"",
+    }
+  }
   }
 }
